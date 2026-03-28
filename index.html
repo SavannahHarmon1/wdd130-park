@@ -9,9 +9,11 @@
 <body>
     <div id="content"
         <header>
-            <a id="logo_link" href="index.html"
-                <img class="logo" src="images/park-logo.png" width="100" alt="Site Logo">
-            </a>
+            <div class="logo">
+                <img src="images/park-logo.png" width="100" alt="Site Logo">
+                <span>CelestialGuide</span>
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -22,42 +24,62 @@
             </nav>
         </header>
 
-        <div id="hero"
-            <div id="hero-box">
-                <img 
-                <h1>
-                    <h1>CelestialGuide</h1>
-                <p>Every night the sky puts on a show</p>
-                </h1>
-                <h3>No telescope needed</h3>
-            </div>
-        <div 
-            <main class="home-grid">
-                <section>
-                    <h2></h2>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <img>
+                    <h1>Every night, the universe puts on a show.</h1>
+                    <p>No telescope required.</p>
+                    <a href="SkyEvents/sky-events.html" class="cta-button">See What's Happening Tonight</a>
+                </div>
+            </section>
 
-                </section>
-                    <section>
-                        <h2></h2>
-                    </section>
-                    <section>
-                        <h2></h2>
-                    </section>
-            </main>
+            <section class="featured-events">
+                <h2>Featured Events</h2>
+                <div class="event-grid">
+                    <div class="event-card">
+                        <img src="images/lunar eclips.png" alt="Blood moon lunar eclipse">
+                        <h3>Total Lunar Eclipse</h3>
+                        <p><stront>Mar 14</stront> Visible across North America </p>
+                    </div>
+                    <div class="event-card">
+                        <img src="images/perseid-meteor-shower.png" alt="Perseid Meteor Shower">
+                        <h3>Perseid Meteor Shower</h3>
+                        <p><strong>Aug 11-13</strong> Up to 100 meteors per hour</p>
+                    </div>
+                    <div class="event-card">
+                        <img src="images/aurora-borealis.png" alt="Aurora Borealis landscape">
+                        <h3>Aurora Borealis Alert</h3>
+                        <p><strong>Tonight</strong> KP index 7 | Visible 55°N and above</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Never miss the next big sky event</h2>
+                    <p>Get personalized alerts based on your location and interests. Free to sign up.</p>
+                    <button class="cta-button accent">Get sky Alerts</button>
+                </div>
+            </section>
+        </main>
+
         <footer>
             <p>CelestialGuide &copy; 2025 - Benjamin Park</p>
-            <p><a href="https://savannahharmon1.github.io/wdd130-park/">Client Site</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
-            <div class="social">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="SkyEvents/sky-events.html">Sky Events</a>
+                <a href="learn/learn.html">Learn</a>
+                <a href="about/about.html">About</a>
+                <a href="contactus.html">Contact Us</a></p>
+            </nav>
+            <div class="social-icons">
                 <a href="https://facebook.png" target="_blank">
-                    <img src="images/facebook-logo.jpg" alt="fb icon">
-                </a>
+                    <img src="images/facebook-logo.jpg" alt="fb icon"></a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram-logo (1).jpg">
-                </a>
+                    <img src="images/instagram-logo (1).jpg"></a>
                 <a href="https://x.com" target="_blank">
-                    <img src="images/x-logo.png" alt="x icon">
-                </a>
+                    <img src="images/x-logo.png" alt="x icon"></a>
             </div>
         </footer>
     </div>
