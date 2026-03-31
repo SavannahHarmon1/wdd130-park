@@ -44,9 +44,33 @@ header .logo img {
     height: 50px;
 }
 
+nav {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
 nav a {
     color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
     margin-left: 1.5rem;
     font-weight: bold;
 }
@@ -282,6 +306,15 @@ body {
 
     header {
         padding: 15px;
+    }
+
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+
+    nav li {
+        height: auto;
+        padding: 10px 0;
     }
 
     .hero {
