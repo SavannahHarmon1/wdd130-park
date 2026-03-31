@@ -7,6 +7,10 @@
     --body-font: 'Lato', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /*GLobal Styles*/
 body {
     margin: 0;
@@ -53,7 +57,7 @@ nav a:hover {
 
 /* Hero Section*/
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rbga(0,0,0,0.5)), url('images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -95,7 +99,7 @@ nav a:hover {
 
 .event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minman(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -252,4 +256,56 @@ footer a {
     color: #C8A951;
     text-decoration: none;
     margin: 0 8px;
+}
+
+/* Smooth transitions */
+.button, nava, .card {
+    transition: all 0.2s ease;
+}
+
+/* Button hover */
+.button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Nav Hover */
+nav a:hover {
+    color: #C8A951;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+body {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .guides {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
 }
